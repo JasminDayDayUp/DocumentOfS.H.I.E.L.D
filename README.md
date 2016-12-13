@@ -1,5 +1,7 @@
 
-Welcome to Classified Documents of S.H.I.E.L.D.*
+Welcome to Classified Documents of S.H.I.E.L.D.
+
+
 I.
 COMSE 4111 Introduction to Database PROJECT
 Contributor: Jingtao Zhu & Shengtong Zhang
