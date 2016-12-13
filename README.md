@@ -1,27 +1,29 @@
 
-Welcome to Classified Documents of S.H.I.E.L.D.
+                  Welcome to Classified Documents of S.H.I.E.L.D.
 
 ![1](https://cloud.githubusercontent.com/assets/15006855/21127256/926e5a46-c0bf-11e6-96c1-81d3282f89fc.png)
 
-I.
-COMSE 4111 Introduction to Database PROJECT
+                  I.COMSE 4111 Introduction to Database PROJECT
+
 Contributor: Jingtao Zhu & Shengtong Zhang
 A website provides an interface for S.H.I.E.L.D fans to interact with the database, making addition and queries
 
-II.Inspiration: 
+                  II.Inspiration: 
+                  
 Fascinated by TV drama- Agents of S.H.I.E.L.D's magical plot and supernatural elements, we are inspired to build this application to provide Marvel fans with a brand new prospective of this TV show. 
 
-III. Function: 
+                  III. Function: 
+                  
 ·If we ask users to input a S.H.I.E.L.D/HYDRA/Inhuman member’s name, our application will return his/her detailed profile and recommend users to view missions the character involved in/relationships with others(friends, enemies, lovers)/facilities he/she owns. 
 ·When users inputs name of a mission, they will get the detailed information about the mission and all the characters involved. 
 ·Moreover, by searching the name of "valuable items”(for example: mystery crystal),  users can get related characters and missions  information. 
 
-IV. Structure: 
+                  IV. Structure: 
 We have seven entities including: detailed profile of members of S.H.I.E.L.D;profile of core members of HYDRA; profile of Inhumans appeared in TV show; significant events and missions; facilities which S.H.I.E.L.D members own(Queen-Jet; bio-chemistry laboratory; convertible car...) valuable items appeared(Great stone; mystery crystal… ); duties of agents of S.H.I.E.L.D. 
 
 ![1](https://cloud.githubusercontent.com/assets/15006855/21127166/df510828-c0be-11e6-80b8-57b3bf38edf6.png)
 
-V.Insterest & Challenges 
+                  V.Insterest & Challenges 
 The inhuman and supernatural elements extracted from TV show makes this application more vivid and interesting. Due to its complex characters relationships and plots, we are to design a more intuitive and beautiful UI.
 
 
@@ -29,7 +31,7 @@ The inhuman and supernatural elements extracted from TV show makes this applicat
 
 The URL of the web application:
     http://40.117.35.158:8111
-**********************************************************************************************************
+
 
 Implemented:
 1. Users can input S.H.I.E.L.D/HYDRA/Inhuman member’s name, our application will return his/her detailed profile and recommend users to view missions the character involved in/relationships with others(friends, enemies, lovers)/facilities he/she owns.
@@ -66,7 +68,7 @@ w4111=> SELECT AVG(S.SAge)
 w4111-> FROM SHIELDMember S, Participate1 P1, Mission M
 w4111-> WHERE S.SID = P1.SID AND P1.MID = 'M01' AND M.MID = 'M01'
 w4111-> \g
-         avg         
+avg         
 ---------------------------------------------------------------------------------------------------------
  32.3000000000000000
 (1 row)
@@ -78,7 +80,7 @@ w4111=> SELECT DISTINCT F.FName
 w4111-> FROM Facility F, BelongsTo B, SHIELDMember S, Participate1 P1, Mission M, Appearance A, ValuableItem V
 w4111-> WHERE F.FID = B.FID AND B.SID = S.SID AND P1.SID = S.SID AND M.MID = P1.MID AND M.MID = A.MID AND A.VID = V.VID AND V.VName = 'The Terrigen Crystals'
 w4111-> \g
-                  fname                  
+fname                  
 --------------------------------------------------------------------------------------------------------
  The Guest House
  Incapacitating Cartridge Emitting Rifle
@@ -97,7 +99,7 @@ w4111=> SELECT S.SName
 w4111-> FROM Mission M, SHIELDMember S RIGHT OUTER JOIN Participate1 P1 ON S.SID = P1.SID
 w4111-> WHERE P1.MID = 'M02' AND M.MID = 'M02'
 w4111-> \g
-     sname     
+sname     
 -----------------------------------------------------------------------------------------------------
  Phil Coulson
  Melinda
