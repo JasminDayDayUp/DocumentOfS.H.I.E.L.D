@@ -1,6 +1,7 @@
 
 Welcome to Classified Documents of S.H.I.E.L.D.
 
+![1](https://cloud.githubusercontent.com/assets/15006855/21127166/df510828-c0be-11e6-80b8-57b3bf38edf6.png)
 
 I.
 COMSE 4111 Introduction to Database PROJECT
@@ -9,12 +10,15 @@ A website provides an interface for S.H.I.E.L.D fans to interact with the databa
 
 II.Inspiration: 
 Fascinated by TV drama- Agents of S.H.I.E.L.D's magical plot and supernatural elements, we are inspired to build this application to provide Marvel fans with a brand new prospective of this TV show. 
+
 III. Function: 
 ·If we ask users to input a S.H.I.E.L.D/HYDRA/Inhuman member’s name, our application will return his/her detailed profile and recommend users to view missions the character involved in/relationships with others(friends, enemies, lovers)/facilities he/she owns. 
 ·When users inputs name of a mission, they will get the detailed information about the mission and all the characters involved. 
 ·Moreover, by searching the name of "valuable items”(for example: mystery crystal),  users can get related characters and missions  information. 
+
 IV. Structure: 
 We have seven entities including: detailed profile of members of S.H.I.E.L.D;profile of core members of HYDRA; profile of Inhumans appeared in TV show; significant events and missions; facilities which S.H.I.E.L.D members own(Queen-Jet; bio-chemistry laboratory; convertible car...) valuable items appeared(Great stone; mystery crystal… ); duties of agents of S.H.I.E.L.D. 
+
 V.Insterest & Challenges 
 The inhuman and supernatural elements extracted from TV show makes this application more vivid and interesting. Due to its complex characters relationships and plots, we are to design a more intuitive and beautiful UI.
 
