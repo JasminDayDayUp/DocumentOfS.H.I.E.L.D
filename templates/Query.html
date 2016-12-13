@@ -1,0 +1,57 @@
+<html>
+    
+    <body>
+        <h1>Query and Search</h1>
+
+<p> To submit a query, enter it in the text box and press the submit button. The results will be displayed on next page.<br>  
+
+<form action="/QuerySubmit">
+<textarea rows="20" cols="100" name="querys" id="queryinput"></textarea>
+<input type="submit" value="QuerySubmit" id="QuerySubmit" /></p>
+</form>
+
+<p>Search for SHIELD Member:
+<form method="GET" action="/SearchSMember">
+  SID: <input type="text" name="SID" />
+  SName: <input type="text" name="SName" />
+  <input type="submit" value="SearchSMember" /> 
+</form>
+</p>
+
+<p>Search for HYDRA Member:
+<form method="GET" action="/SearchHMember">
+  HID: <input type="text" name="HID" />
+  HName: <input type="text" name="HName" />
+  <input type="submit" value="SearchHMember" /> 
+</form>
+</p>
+
+<p>Search for Inhuman Member:
+<form method="GET" action="/SearchIMember">
+  IID: <input type="text" name="IID" />
+  IName: <input type="text" name="IName" />
+  <input type="submit" value="SearchIMember" /> 
+</form>
+</p>
+
+<p>Search for Mission:
+<form method="GET" action="/SearchMission">
+  MID: <input type="text" name="MID" />
+  MName: <input type="text" name="MName" />
+  <input type="submit" value="SearchMission" /> 
+</form>
+</p>
+
+<p>Search for Valuable Items:
+<form method="GET" action="/SearchVI">
+  VID: <input type="text" name="VID" />
+  VName: <input type="text" name="VName" />
+  <input type="submit" value="SearchVI" /> 
+</form>
+</p>
+
+
+</body>
+
+
+</html>

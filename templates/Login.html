@@ -1,0 +1,86 @@
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+
+<body>
+  <h1>Classified Documents of S.H.I.E.L.D.</h1>
+  
+
+<form method="POST" action="/addSagent">
+<p>Add new SHIELD member:<br />ID<input type="text" name="SID">Name<input type="text" name="SName"> Age<input type="number" name="SAge">Gender<input type="text" name="SGender"> Ability<input type="text" name="SAbility"> <input type="submit" value="addSagent"></p>
+</form>
+    
+<form method="POST" action="/addHagent">
+<p>Add new HYDRA member:<br />ID<input type="text" name="HID">Name<input type="text" name="HName"> Age<input type="number" name="HAge">Gender<input type="text" name="HGender"> Ability<input type="text" name="HAbility"> <input type="submit" value="addHagent"></p>
+</form>
+
+<form method="POST" action="/addIagent">
+<p>Add new Inhuman member:<br />ID<input type="text" name="IID">Name<input type="text" name="IName"> Age<input type="number" name="IAge">Gender<input type="text" name="IGender"> Ability<input type="text" name="IAbility"> <input type="submit" value="addIagent"></p>
+</form>    
+ 
+<form method="POST" action="/addMission">
+<p>Add new Mission:<br />ID<input type="text" name="MID">Name<input type="text" name="MName"> Timestart<input type="number" name="MTimestart">Timeend<input type="number" name="MTimeend"> MDescription<input type="text" name="MDescription"> <input type="submit" value="addMission"></p>
+</form>
+
+<form method="POST" action="/addValuableItem">
+<p>Add new Item:<br />ID<input type="text" name="VID">Name<input type="text" name="VName"> Function<input type="text" name="VFunction"> <input type="submit" value="addValuableItem"></p>
+</form>
+   
+
+<form method="POST" action="/addFacility">
+<p>Add new facility:<br />ID<input type="text" name="FID">Name<input type="text" name="FName"> Function<input type="text" name="FFunction"> <input type="submit" value="addFacility"></p>
+</form>
+
+
+<form method="POST" action="/addDuty">
+<p>Add new Duty:<br />ID<input type="text" name="DID">Name<input type="text" name="DName"> Function<input type="text" name="DFunction"> <input type="submit" value="addDuty"></p>
+</form>
+
+
+<!--Relationship1(SID, HID, R) VALUES('S01', 'H05', 'Enemy')-->
+<form method="POST" action="/addRelationship1">
+<p>Add new Relationship between SHIELD and Hydra:<br />SID<input type="text" name="SID">HID<input type="text" name="HID"> Relationship<input type="text" name="R"> <input type="submit" value="addRelationship1"></p>
+</form>
+
+
+<form method="POST" action="/addRelationship2">
+<p>Add new Relationship between SHIELD and Inhumans:<br />SID<input type="text" name="SID">IID<input type="text" name="IID"> Relationship<input type="text" name="R"> <input type="submit" value="addRelationship2"></p>
+</form>
+
+
+<form method="POST" action="/addRelationship3">
+<p>Add new Relationship between Inhumans and Hydra:<br />IID<input type="text" name="IID">HID<input type="text" name="HID"> Relationship<input type="text" name="R"> <input type="submit" value="addRelationship3"></p>
+</form>
+
+
+<!--Participate1(SID, MID, Timestart, Timeend-->
+<form method="POST" action="/addParticipate1">
+<p>Add new SHIELD Participation:<br />SID<input type="text" name="SID">MID<input type="text" name="MID"> Timestart<input type="number" name="Timestart">Timeend<input type="number" name="Timeend"> <input type="submit" value="addParticipate1"></p>
+</form>
+    
+<form method="POST" action="/addParticipate2">
+<p>Add new HYDRA Participation:<br />HID<input type="text" name="HID">MID<input type="text" name="MID"> Timestart<input type="number" name="Timestart">Timeend<input type="number" name="Timeend"> <input type="submit" value="addParticipate2"></p>
+</form>
+
+<form method="POST" action="/addBelongsTo">
+<p>Add new BelongsTo:<br />SID<input type="text" name="SID">FID<input type="text" name="FID"> <input type="submit" value="addBelongsTo"></p>
+</form>
+
+<form method="POST" action="/addServeAs">
+<p>Add new ServeAs:<br />SID<input type="text" name="SID">DID<input type="text" name="DID"> <input type="submit" value="addServeAs"></p>
+</form>
+
+<form method="POST" action="/addAppearance">
+<p>Add new Appearance:<br />MID<input type="text" name="MID">VID<input type="text" name="VID"> <input type="submit" value="addAppearance"></p>
+</form>
+
+
+</body>
+
+
+</html>
